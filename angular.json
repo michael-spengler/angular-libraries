@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "no-dissuasion-without-contact": {
+      "projectType": "library",
+      "root": "projects/no-dissuasion-without-contact",
+      "sourceRoot": "projects/no-dissuasion-without-contact/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/no-dissuasion-without-contact/tsconfig.lib.json",
+            "project": "projects/no-dissuasion-without-contact/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/no-dissuasion-without-contact/src/test.ts",
+            "tsConfig": "projects/no-dissuasion-without-contact/tsconfig.spec.json",
+            "karmaConfig": "projects/no-dissuasion-without-contact/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/no-dissuasion-without-contact/tsconfig.lib.json",
+              "projects/no-dissuasion-without-contact/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "angular-libraries"
 }

@@ -1,3 +1,8 @@
+https://medium.com/@esanjiv/complete-beginner-guide-to-publish-an-angular-library-to-npm-d42343801660
+
+`ng g library no-dissuasion-without-contact`
+`ng build no-dissuasion-without-contact`
+
 # AngularLibraries
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.

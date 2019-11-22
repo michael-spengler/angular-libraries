@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "no-dissuasion-without-contact": [
+        "dist/no-dissuasion-without-contact"
+      ],
+      "no-dissuasion-without-contact/*": [
+        "dist/no-dissuasion-without-contact/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
